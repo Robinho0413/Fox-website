@@ -27,13 +27,13 @@ const route = useRoute()
             </div>
             <div class="flex flex-col justify-center items-center">
                 <NuxtLink
-                    to="/events"
-                    :class="[route.name === 'events' ? 'text-primary-500' : 'text-black hover:text-primary-500', 'p-2 duration-300']"
+                    to="/news"
+                    :class="[route.name === 'news' ? 'text-primary-500' : 'text-black hover:text-primary-500', 'p-2 duration-300']"
                 >
-                    Évènements
+                    Actualités
                 </NuxtLink>
                 <span
-                    :class="[route.name === 'events' ? 'w-[110%]' : 'w-0', 'h-0.5 bg-primary-500 duration-300 ease-in-out']"
+                    :class="[route.name === 'news' ? 'w-[110%]' : 'w-0', 'h-0.5 bg-primary-500 duration-300 ease-in-out']"
                 ></span>
             </div>
             <div class="flex flex-col justify-center items-center">
@@ -45,6 +45,17 @@ const route = useRoute()
                 </NuxtLink>
                 <span
                     :class="[route.name === 'shop' ? 'w-[110%]' : 'w-0', 'h-0.5 bg-primary-500 duration-300 ease-in-out']"
+                ></span>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <NuxtLink
+                    to="/contact"
+                    :class="[route.name === 'contact' ? 'text-primary-500' : 'text-black hover:text-primary-500', 'p-2 duration-300']"
+                >
+                    Contact
+                </NuxtLink>
+                <span
+                    :class="[route.name === 'contact' ? 'w-[110%]' : 'w-0', 'h-0.5 bg-primary-500 duration-300 ease-in-out']"
                 ></span>
             </div>
         </div>
