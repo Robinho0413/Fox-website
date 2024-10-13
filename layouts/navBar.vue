@@ -14,7 +14,7 @@ const route = useRoute()
             LOGO
         </NuxtLink>
         <div class="flex flex-row gap-16">
-            <div class="flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center group">
                 <NuxtLink
                     to="/"
                     :class="[route.name === 'index' ? 'text-primary-500' : 'text-black hover:text-primary-500', 'p-2 duration-300']"
@@ -22,10 +22,10 @@ const route = useRoute()
                     Accueil
                 </NuxtLink>
                 <span
-                    :class="[route.name === 'index' ? 'w-[110%]' : 'w-0', 'h-0.5 bg-primary-500 duration-300 ease-in-out']"
+                    :class="[route.name === 'index' ? 'w-[110%]' : 'w-0 group-hover:w-[110%]', 'h-0.5 bg-primary-500 duration-300 ease-in-out']"
                 ></span>
             </div>
-            <div class="flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center group">
                 <NuxtLink
                     to="/news"
                     :class="[route.name === 'news' ? 'text-primary-500' : 'text-black hover:text-primary-500', 'p-2 duration-300']"
@@ -33,21 +33,43 @@ const route = useRoute()
                     Actualités
                 </NuxtLink>
                 <span
-                    :class="[route.name === 'news' ? 'w-[110%]' : 'w-0', 'h-0.5 bg-primary-500 duration-300 ease-in-out']"
+                    :class="[route.name === 'news' ? 'w-[110%]' : 'w-0 group-hover:w-[110%]', 'h-0.5 bg-primary-500 duration-300 ease-in-out']"
                 ></span>
             </div>
-            <div class="flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center group">
                 <NuxtLink
-                    to="/shop"
-                    :class="[route.name === 'shop' ? 'text-primary-500' : 'text-black hover:text-primary-500', 'p-2 duration-300']"
+                    to="/inscription"
+                    :class="[route.name === 'inscription' ? 'text-primary-500' : 'text-black hover:text-primary-500', 'p-2 duration-300']"
                 >
-                    Boutique
+                    Inscription
                 </NuxtLink>
                 <span
-                    :class="[route.name === 'shop' ? 'w-[110%]' : 'w-0', 'h-0.5 bg-primary-500 duration-300 ease-in-out']"
+                    :class="[route.name === 'inscription' ? 'w-[110%]' : 'w-0 group-hover:w-[110%]', 'h-0.5 bg-primary-500 duration-300 ease-in-out']"
                 ></span>
             </div>
-            <div class="flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center group">
+                <NuxtLink
+                    to="/club"
+                    :class="[route.name === 'club' ? 'text-primary-500' : 'text-black hover:text-primary-500', 'p-2 duration-300']"
+                >
+                    Club
+                </NuxtLink>
+                <span
+                    :class="[route.name === 'club' ? 'w-[110%]' : 'w-0 group-hover:w-[110%]', 'h-0.5 bg-primary-500 duration-300 ease-in-out']"
+                ></span>
+            </div>
+            <div class="flex flex-col justify-center items-center group">
+                <NuxtLink
+                    to="/galerie"
+                    :class="[route.name === 'galerie' ? 'text-primary-500' : 'text-black hover:text-primary-500', 'p-2 duration-300']"
+                >
+                    Galerie
+                </NuxtLink>
+                <span
+                    :class="[route.name === 'galerie' ? 'w-[110%]' : 'w-0 group-hover:w-[110%]', 'h-0.5 bg-primary-500 duration-300 ease-in-out']"
+                ></span>
+            </div>
+            <div class="flex flex-col justify-center items-center group">
                 <NuxtLink
                     to="/contact"
                     :class="[route.name === 'contact' ? 'text-primary-500' : 'text-black hover:text-primary-500', 'p-2 duration-300']"
@@ -55,7 +77,7 @@ const route = useRoute()
                     Contact
                 </NuxtLink>
                 <span
-                    :class="[route.name === 'contact' ? 'w-[110%]' : 'w-0', 'h-0.5 bg-primary-500 duration-300 ease-in-out']"
+                    :class="[route.name === 'contact' ? 'w-[110%]' : 'w-0 group-hover:w-[110%]', 'h-0.5 bg-primary-500 duration-300 ease-in-out']"
                 ></span>
             </div>
         </div>
